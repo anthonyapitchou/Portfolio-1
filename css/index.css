@@ -1,0 +1,27 @@
+body {
+    background: #0f0f12;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: rgba(124, 140, 255, 0.2);
+    filter: blur(120px);
+    top: -200px;
+    left: -200px;
+    animation: float 20s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(100px, 80px);
+    }
+}
