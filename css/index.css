@@ -225,7 +225,7 @@ body::after {
 .front-end {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 60px;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
@@ -300,9 +300,11 @@ body::after {
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
+    transition: transform 0.4s ease;
 
 }
+
+
 
 .tech-list {
     display: flex;
@@ -419,7 +421,7 @@ body::after {
 .ux-design {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 60px;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -432,7 +434,7 @@ body::after {
     align-items: flex-start;
     gap: 1rem;
     padding: 0rem 1rem;
-
+    color: rgb(10, 0, 27);
 }
 
 .project-info {
@@ -453,7 +455,7 @@ body::after {
 .tech-list {
     display: flex;
     gap: 10px;
-    padding: 0;
+    padding: 0px;
     list-style: none;
 }
 
@@ -483,16 +485,12 @@ body::after {
 /* base button */
 
 .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 16px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.25s;
+    border: 1px solid transparent;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* website button */
@@ -771,7 +769,7 @@ body::after {
 }
 
 
-/* délais pour chaque section */
+/* delay for each section */
 
 .introduction {
     animation-delay: 1.8s;
