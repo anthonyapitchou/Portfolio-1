@@ -198,17 +198,6 @@ body::after {
 }
 
 
-.skills {
-    background: #0a001c;
-    color: white;
-    padding: 120px 80px;
-}
-
-.contact {
-    background: #0a001c;
-    color: white;
-    padding: 120px 80px;
-}
 
 .projects {
     width: 100%;
@@ -229,12 +218,19 @@ body::after {
     font-size: 48px;
 }
 
+/* new container*/
 .front-end {
     display: flex;
     flex-direction: row;
     gap: 40px;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.project-text {
+    text-align: center;
+    margin-bottom: 4.5rem;
 }
 
 .project-card {
@@ -245,6 +241,8 @@ body::after {
     border-radius: 15px;
     border: 1px solid rgba(43, 105, 251, 0.12);
     justify-content: space-between;
+    background: rgb(250, 254, 255);
+    box-shadow: rgb(250, 254, 255) 0px 0px 4rem 1rem;
 
 }
 
@@ -280,9 +278,10 @@ body::after {
     gap: 1rem;
     padding: 0rem 1rem;
     color: rgb(10, 0, 27);
-    background: rgb(250, 254, 255);
-    box-shadow: rgb(250, 254, 255) 0px 0px 4rem 1rem;
+
 }
+
+
 
 .project-info {
     display: flex;
@@ -296,6 +295,9 @@ body::after {
     width: 100%;
     height: 180px;
     object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
 
 }
 
@@ -370,4 +372,355 @@ body::after {
 .icon {
     width: 16px;
     height: 16px;
+}
+
+/*ux project */
+
+.ux-card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    border: 1px solid rgba(43, 105, 251, 0.12);
+    justify-content: space-between;
+    color: rgb(10, 0, 27);
+    background: rgb(250, 254, 255);
+    box-shadow: rgb(250, 254, 255) 0px 0px 4rem 1rem;
+
+}
+
+.title-content {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.ux-project h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #4fc4c0;
+    margin: 8px auto 0;
+}
+
+
+/* hover effect */
+
+.ux-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.ux-design {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ux-project {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0rem 1rem;
+
+}
+
+.project-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+
+}
+
+.image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+
+}
+
+.tech-list {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.info {
+    background: #4fc4c0;
+    color: #0a001c;
+    padding: 7px 20px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.info:hover {
+    background: #4fc4c0;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-button {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* base button */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+/* website button */
+
+.website-btn {
+    background: #0a001c;
+    color: white;
+}
+
+/* github button */
+
+.figma-btn {
+    background: #4fc4c0;
+    color: #0a001c;
+}
+
+/* hover effect */
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* icon */
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* contact container*/
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px;
+}
+
+.left-container {
+    max-width: 600px;
+}
+
+.title-contact {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.left-container p {
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+.links a {
+    color: #4fc4c0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    color: #6fe6e2;
+}
+
+
+.title-contact {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+
+.mail {
+    position: relative;
+    color: #4fc4c0;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.mail:hover {
+    animation: vibrate 0.2s linear infinite;
+}
+
+@keyframes vibrate {
+
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(2px, -2px);
+    }
+
+    60% {
+        transform: translate(-2px, -2px);
+    }
+
+    80% {
+        transform: translate(2px, 2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+
+}
+
+
+
+.github {
+    position: relative;
+    color: #4fc4c0;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.github:hover {
+    animation: vibrate 0.2s linear infinite;
+}
+
+@keyframes vibrate {
+
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(2px, -2px);
+    }
+
+    60% {
+        transform: translate(-2px, -2px);
+    }
+
+    80% {
+        transform: translate(2px, 2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+
+}
+
+
+
+.linkedin {
+    position: relative;
+    color: #4fc4c0;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.linkedin:hover {
+    animation: vibrate 0.2s linear infinite;
+}
+
+@keyframes vibrate {
+
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(2px, -2px);
+    }
+
+    60% {
+        transform: translate(-2px, -2px);
+    }
+
+    80% {
+        transform: translate(2px, 2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+
+}
+
+
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.links a {
+    color: #4fc4c0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.image-contact {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-contact:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }

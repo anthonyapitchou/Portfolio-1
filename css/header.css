@@ -20,11 +20,41 @@
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: whitesmoke;
+    color: #66d9ed;
     width: 8rem;
     font-family: 'Satoshi', sans-serif;
     letter-spacing: -1px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 0;
+    overflow: visible;
 }
+
+.logo::after,
+.logo::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #ff0000, #00ffff);
+    bottom: -8px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.6s ease-out;
+    /* Plus lent: 0.4s → 0.6s */
+}
+
+.logo::before {
+    top: -8px;
+    transform-origin: left;
+}
+
+.logo:hover::after,
+.logo:hover::before {
+    transform: scaleX(1);
+}
+
 
 .logo span {
     display: inline-block;
