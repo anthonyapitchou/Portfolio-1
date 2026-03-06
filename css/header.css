@@ -1,4 +1,40 @@
-/* HEADER */
+/* NAV LINKS APPEAR AFTER 1s */
+
+.nav-list li {
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: navReveal 0.6s ease forwards;
+}
+
+/* delay pour chaque lien */
+
+.nav-list li:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.nav-list li:nth-child(2) {
+    animation-delay: 1.2s;
+}
+
+.nav-list li:nth-child(3) {
+    animation-delay: 1.4s;
+}
+
+.nav-list li:nth-child(4) {
+    animation-delay: 1.6s;
+}
+
+/* animation */
+
+@keyframes navReveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
 
 .header {
     width: 100%;
@@ -14,6 +50,8 @@
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 /* LOGO */
 

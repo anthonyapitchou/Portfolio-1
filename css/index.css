@@ -25,6 +25,9 @@ body::after {
     z-index: -1;
 }
 
+
+
+
 /* HERO */
 
 .introduction {
@@ -724,6 +727,79 @@ body::after {
     transform: scale(1.05);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
+
+
+
+/* HERO APPEAR ANIMATION */
+
+.screen,
+.hero-right {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: heroReveal 0.8s ease forwards;
+}
+
+/* délais */
+
+.screen {
+    animation-delay: 1.8s;
+}
+
+.hero-right {
+    animation-delay: 2.2s;
+}
+
+
+/* animation */
+
+@keyframes heroReveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* -------- GLOBAL FADE ANIMATION -------- */
+
+.introduction,
+.projects,
+.ux-design,
+.contact {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: sectionReveal 0.9s ease forwards;
+}
+
+
+/* délais pour chaque section */
+
+.introduction {
+    animation-delay: 1.8s;
+}
+
+.projects {
+    animation-delay: 2.8s;
+}
+
+.ux-design {
+    animation-delay: 3.4s;
+}
+
+.contact {
+    animation-delay: 4s;
+}
+
+
+/* animation */
+
+@keyframes sectionReveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 
 /* MOBILE */
 
