@@ -724,3 +724,35 @@ body::after {
     transform: scale(1.05);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .introduction {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .screen {
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .photo {
+        transform: none;
+    }
+
+    .hero-right {
+        padding: 40px 20px;
+    }
+
+    .hero-right h2 {
+        font-size: 32px;
+    }
+
+    .description {
+        max-width: 100%;
+    }
+
+}
