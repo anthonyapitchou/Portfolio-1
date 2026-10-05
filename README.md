@@ -7,8 +7,8 @@ The goal of this portfolio is to present a selection of projects that demonstrat
 ## Live Website
 
 You can view the portfolio here:
-
-[https://your-portfolio-link.com](https://anthonyapitchou.github.io/Portfolio-1/)
+[[
+[https://your-portfolio-link.com](https://anthonyapitchou.github.io/Portfolio-1/)](https://github.com/anthonyapitchou)](https://anthonyapitchou.github.io/Portfolio-1/)
 
 ## Projects Included
 
