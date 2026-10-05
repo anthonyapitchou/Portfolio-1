@@ -45,7 +45,6 @@ https://anthonyapitchou.github.io/Portfolio-1/
 
 Anthony Apicella
 
-- GitHub: https://github.com/anthonyapitchou
 - LinkedIn: https://www.linkedin.com/in/anthonyapicella-designer-programmer/
 
 ## Purpose
